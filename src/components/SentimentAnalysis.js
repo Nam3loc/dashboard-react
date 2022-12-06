@@ -1,7 +1,7 @@
 
 
 export default function SentimentAnalysis() {
-    <div>
-        <p>*Insert metric here*</p>
+    <div className="rating">
+        <p>*Sentiment Analysis #*</p>
     </div>
 }

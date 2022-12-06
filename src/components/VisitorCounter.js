@@ -1,9 +1,9 @@
 export default function VisitorCounter() {
     return(
-        <div>
-            *insert metric here*
-            <div>
-                *insert graph here*
+        <div className="visCountWrapper">
+            *# of Web Visitors*
+            <div className="visCountGraph">
+                *Visitor Counter Graph*
             </div>
         </div>
     )

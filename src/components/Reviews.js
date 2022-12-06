@@ -1,7 +1,7 @@
 
 
 export default function Reviews() {
-    <div>
-        <p>*Insert metric here*</p>
+    <div className="rating">
+        <p>*# of Reviews*</p>
     </div>
 }

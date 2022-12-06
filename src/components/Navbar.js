@@ -1,6 +1,6 @@
 export default function Navbar() {
     return(
-        <div>
+        <div className="nav">
             <a href="#">Dashboard</a>
             <a href="#">Widget</a>
             <a href="#">Reviews</a>

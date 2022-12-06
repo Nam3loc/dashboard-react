@@ -1,7 +1,7 @@
 
 
 export default function AverageRating() {
-    <div>
-        <p>*Insert metric here*</p>
+    <div className="rating">
+        <p>*Average Rating #*</p>
     </div>
 }

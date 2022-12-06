@@ -8,13 +8,18 @@ import VisitorCounter from './components/VisitorCounter';
 
 function App() {
 	return (
-		<>
-		<Navbar />
-		<Reviews />
-		<AverageRating />
-		<SentimentAnalysis />
-		<VisitorCounter />
-		</>
+		<div className="webPage">
+			<div className="nav">
+				<Navbar />
+			</div>
+			<div className="ratingAndCounterContainer">
+				<Reviews />
+				<AverageRating />
+				<SentimentAnalysis />
+
+				<VisitorCounter />
+			</div>
+		</div>
 	);
 }
 
