@@ -1,24 +1,32 @@
 import './App.css';
 
 import Navbar from './components/Navbar';
-import Reviews from './components/Reviews';
-import AverageRating from './components/AverageRating';
-import SentimentAnalysis from './components/SentimentAnalysis';
+import Rating from './components/Rating';
 import VisitorCounter from './components/VisitorCounter';
+import dataArr from './data';
+
+const data = dataArr.map((ele, idx) => {
+	return (
+		<Rating key={idx} {...ele} />
+	)
+})
 
 function App() {
-	return (
+		return (
 		<div className="webPage">
 			<div className="nav">
 				<Navbar />
 			</div>
-			<div className="ratingAndCounterContainer">
-				<Reviews />
-				<AverageRating />
-				<SentimentAnalysis />
 
-				<VisitorCounter />
+			<div className="ratingAndCounterWrapper">
+				<div className="ratingContainer">
+					<section>{data}</section>
+				</div>
+				<div className="counterContainer">
+					<VisitorCounter />
+				</div>
 			</div>
+
 		</div>
 	);
 }

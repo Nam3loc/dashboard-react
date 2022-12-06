@@ -1,7 +1,8 @@
-
-
-export default function AverageRating() {
-    <div className="rating">
-        <p>*Average Rating #*</p>
-    </div>
+export default function AverageRating(props) {
+    return (
+        <div className="rating">
+            <h3>{props.title}</h3>
+            <p>{props.number}</p>
+        </div>
+    )
 }
