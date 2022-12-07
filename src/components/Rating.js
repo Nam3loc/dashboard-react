@@ -6,8 +6,8 @@ export default function Rating(props) {
     return (
         <>
             <Reviews title={props.title} number={props.number} />
-            <AverageRating title={props.title} number={props.number} />
-            <SentimentAnalysis title={props.title} number={props.number} />
+            {/* <AverageRating title={props.title} number={props.number} />
+            <SentimentAnalysis title={props.title} number={props.number} /> */}
         </>
     )
 }
