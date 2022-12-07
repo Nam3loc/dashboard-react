@@ -1,7 +1,7 @@
 export default function Reviews(props) {
     return (
         <div className="rating">
-            <h3>{props.title}</h3>
+            <h5>{props.title}</h5>
             <p>{props.number}</p>
         </div>
     )

@@ -1,5 +1,5 @@
 .App {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
@@ -15,34 +15,37 @@
   height: 100vh;
 }
 
+/* Nav Box */
 .nav {
   display: flex;
   flex-direction: column;
   text-align: flex-start;
   justify-content: center;
 
-  height: 80vh;
-  width: 15vw;
+  height: 83vh;
+  width: 25vw;
 
   background-color: grey;
 }
 
+/* Nav Text */
 .nav > a {
   padding: 15px;
+  margin: 20px;
+
+  text-decoration: none;
+  color: black;
 }
 
+/* Ratings Boxes */
 .rating {
   background-color: grey;
   border: 2px solid black;
 
   width: 30%;
   height: 100%;
-}
 
-.ratingsData {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: black;
 }
 
 section {
@@ -56,34 +59,75 @@ section {
   height: 40vh;
 }
 
+/* Ratings Boxes: Text */
+.rating > h5 {
+  margin-left: 5px;
+}
+
+.rating > p {
+  margin-left: 5px;
+}
+
+.ratingsData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Box for Website Visitors */
 .counterContainer {
   margin: 5px;
 }
 
+/* Wrapper for both Ratings Boxes and Web Visitors */
 .ratingAndCounterWrapper {
   display: flex;
   flex-direction: column;
 }
 
+/* Website Visitors Container */
 .visCountWrapper {
   background-color: grey;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 
   width: 60vw;
   height: 40vh;
 }
 
-.visCountWrapper > p {
+/* Web Visitors Text */
+.visCountWrapper > h5 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  color: black;
+  margin-left: 5px;
 }
 
+/* Graph Container */
 .visCountGraph {
   margin: 0 auto;
 
   background-color: grey;
 
-  height: 200px;
-  width: 650px;
+  height: 70%;
+  width: 100%;
+}
+
+/* Image */
+.visCountGraph > img {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 821 | Vis Today Text */
+.textInARow {
+  display: flex;
+  align-items: baseline;
+
+  color: black;
+
+  margin-left: 5px;
 }

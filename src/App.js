@@ -8,8 +8,11 @@ import dataArr from './data';
 const data = dataArr.map((ele, idx) => {
 	return (
 		<Rating key={idx} {...ele} />
+		// <Rating key={idx} title={ele.title} number={ele.number} />
 	)
 })
+
+console.log(data);
 
 function App() {
 		return (
